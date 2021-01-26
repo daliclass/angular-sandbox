@@ -1,0 +1,12 @@
+<p>blog works!</p>
+
+<div *ngIf="blog">
+  <h1>{{ blog.fields.title }}</h1>
+  <img src="{{ 'https:' + blog.fields.banner.fields.file.url}}" />
+  <h2> Introduction </h2>
+  <p>{{ blog.fields.introduction }}</p>
+  <h2> Body </h2>
+  <p>{{ blog.fields.body }}</p>
+  <h2> Summary </h2>
+  <p>{{ blog.fields.summary }}</p>
+</div>
