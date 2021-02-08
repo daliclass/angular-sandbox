@@ -2,11 +2,11 @@
 
 <div *ngIf="blog">
   <h1>{{ blog.fields.title }}</h1>
-  <img src="{{ 'https:' + blog.fields.banner.fields.file.url}}" />
+  <img  src="{{ 'https:' + blog.fields.banner.fields.file.url}}" />
   <h2> Introduction </h2>
   <p>{{ blog.fields.introduction }}</p>
   <h2> Body </h2>
-  <p>{{ blog.fields.body }}</p>
+  <p style="white-space: pre-line">{{ blog.fields.body }}</p>
   <h2> Summary </h2>
   <p>{{ blog.fields.summary }}</p>
 </div>

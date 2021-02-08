@@ -1,7 +1,7 @@
 <p>blog works!</p>
 
 <ul class="u-listReset">
-  <li *ngFor="let blog of blogs">
+  <li *ngFor="let blog of blogs | async">
     <a routerLink= "/blogs/{{blog.fields.slug}}">
       {{ blog.fields.title }}
     </a>
